@@ -1,0 +1,288 @@
+html {
+    font-family: Lexend;
+    font-size: 16px;
+  }
+
+
+  /* Style pour l'effet de transition */
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }   
+  .fade-in.visible {
+    opacity: 1;
+  }
+
+  #overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  display: none;
+  z-index: 1000;
+}
+
+.dialog-container.show {
+  display: block;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+a {
+color: #415a77;
+display:inline-block;
+text-decoration: none;
+font-weight: 400;
+}
+
+h2 {
+text-align: center;
+font-size: 16px;
+font-weight: 600;
+text-transform: uppercase;
+display:inline-block;
+margin: 40px 8px 10px 8px; 
+color: #669bbc;
+}
+/* Style pour le formulaire au milieu de la page */
+#form1 {
+justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    display: none;
+    z-index: 1000;
+   border-radius: 17px;
+   display: block;
+  }
+
+
+  #form2 {
+justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    display: none;
+    z-index: 1000;
+   border-radius: 17px;
+   display: block;
+  }
+  #form3 {
+    justify-content: center;
+      align-items: center;
+      flex-direction: column; 
+        position: fixed;
+        top: 20%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        display: none;
+        z-index: 1000;
+       border-radius: 17px;
+       display: block;
+      }
+.login-form {
+border-radius: 3px;
+border: 3px solid skyblue;
+background:#f8f9fa;
+padding: 0;
+width: 90%;
+max-width: 350px;
+position: relative;
+box-shadow: 0 0 10px #464647;
+text-align: center;
+}
+
+
+#formFooter {
+background: transparent;
+border-top: 1px solid #dce8f1;
+padding: 25px;
+text-align: center;
+border-radius: 0 0 10px 10px;
+}
+
+h2.inactive {
+color: #669bbc;
+cursor: pointer;
+}
+
+h2.active {
+color: #669bbc;
+border-bottom: 2px solid #84a98c;
+}
+input[type=button], input[type=submit], input[type="reset"]  {
+background: transparent;
+border: none;
+padding: 15px 80px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+text-transform: uppercase;
+font-size: 13px;
+box-shadow: 0 0 1px skyblue;
+border-radius: 50px;
+margin: 5px 20px 40px 20px;
+transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+box-shadow: 0 0 10px 0 #778da9;
+cursor: pointer;
+color: #6c757d;
+}
+
+input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
+transform: scale(0.95);
+}
+
+input[type=text], input[type="password"],input[type="number"] ,input[type="file"],select,input[type="date"]{
+background: transparent;
+color: #778da9;
+padding: 15px 32px;
+text-align: center;
+text-decoration:
+none;
+display: inline-block;
+font-size: 16px;
+margin: 5px;
+width: 85%;
+border: none;
+box-shadow: 0 0 1px #778da9;
+transition: all 0.5s ease-in-out;
+border-radius: 20px;
+}
+
+input[type=text]:focus, input[type="password"]:focus {
+box-shadow: 0 0 10px #778da9;
+color: #6c757d;
+}
+.fadeInDown {  
+animation-name: fadeInDown;
+animation-duration: 1s;
+animation-fill-mode: both;
+}
+
+@keyframes fadeInDown {
+0% {
+  opacity: 0;
+  transform: translate3d(0, -100%, 0);
+}
+
+50%{
+opacity: .5;
+transform: translate3d(0, 20%, 0);
+}
+
+100% {
+  opacity: 1;
+  transform: none;
+}
+}
+
+/* Fade-in Animation */
+
+@keyframes fadeIn {
+from { 
+  opacity:0; 
+} 
+
+to {
+  opacity:1; 
+} 
+}
+
+.fadeIn {
+opacity:0;
+animation: fadeIn ease-in 1s;
+animation-fill-mode: forwards;
+animation-duration: 1s;
+}
+
+.fadeIn.first {
+animation-delay: 0.1s;
+}
+
+.fadeIn.second {
+animation-delay: 0.2s;
+}
+
+.fadeIn.third {
+animation-delay: 0.3s;
+}
+
+.fadeIn.fourth {
+animation-delay: 0.4s;
+}
+.fadeIn.fifth {
+animation-delay: 0.5s;
+}
+.fadeIn.sixth {
+animation-delay: 0.6s;
+}
+.fadeIn.seventh {
+animation-delay: 0.6s;
+}
+/* Fade-in Animation */
+.cd{
+    display: inline-block;
+    top: 20%;
+    left: 40%;
+}
+
+
+.underlineHover:hover {
+color: #6c757d;
+}
+
+.underlineHover:hover:after{
+width: 100%;
+}
+.date {
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+    }
+    
+@keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+}

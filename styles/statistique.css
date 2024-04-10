@@ -1,0 +1,67 @@
+.card-list {
+    width: 100%;
+}
+
+.card {
+    border-radius: 8px;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+.card .zmdi {
+    color: white;
+    font-size: 28px;
+    opacity: 0.3;
+    position: absolute;
+    right: 13px;
+    top: 13px;
+}
+
+.card .stat {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 12px;
+    margin-top: 25px;
+    padding: 10px 10px 0;
+    text-transform: uppercase;
+}
+
+.card .title {
+    display: inline-block;
+    font-size: 12px;
+    padding: 10px 10px 0;
+    text-transform: uppercase;
+}
+
+.card .value {
+    font-size: 28px;
+    padding: 0 10px;
+    animation: increaseNumber 1.5s ease-in-out;
+}
+
+.card.green {
+    background-color: #66B92E;
+}
+
+.card.orange {
+    background-color: #DA932C;
+}
+
+.card.red {
+    background-color: #D65B4A;
+}
+.card.azul {
+    background-color: #4682B4;
+}
+
+
+@keyframes increaseNumber {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
